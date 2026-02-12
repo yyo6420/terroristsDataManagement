@@ -1,0 +1,15 @@
+.FilterSection {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.filterButtons {
+    padding: 0.5rem;
+    border-radius: 15px;
+}
+
+.mostDanger {
+    background-color: rgb(64, 98, 150);
+    color: aliceblue;
+}

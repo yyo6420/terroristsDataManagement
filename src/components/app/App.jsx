@@ -1,23 +1,23 @@
-import { useState } from 'react'
-import './App.css'
-import NavBar from '../navBar/NavBar';
-import TerirstsData from '../teroristsData/TeroristsData';
-import teroristsData from '../../terorists/terorists';
-
+import { useState } from "react";
+import "./App.css";
+import NavBar from "../navBar/NavBar";
+import TerirstsData from "../teroristsData/TeroristsData";
+import FilterSection from "../filterSection/FilterSection";
 function App() {
-  const [data, setData] = useState({
-    
-  })
+  const [data, setData] = useState({});
 
   return (
     <>
-    <NavBar />
+      <NavBar />
+      <div className="filterSectionDiv">
+        <FilterSection />
+      </div>
 
-    <div className='dataTeroristsDiv'>
-      <TerirstsData />
-    </div>
+      <div className="dataTeroristsDiv">
+        <TerirstsData />
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

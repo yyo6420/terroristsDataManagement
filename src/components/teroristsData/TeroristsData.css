@@ -1,6 +1,7 @@
 .TeroristsDataArea {
     border-collapse: collapse;
     width: 100%;
+    direction: rtl;
 }
 
 td, th {
