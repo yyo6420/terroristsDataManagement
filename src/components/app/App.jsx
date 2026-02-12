@@ -3,18 +3,30 @@ import "./App.css";
 import NavBar from "../navBar/NavBar";
 import TerirstsData from "../teroristsData/TeroristsData";
 import FilterSection from "../filterSection/FilterSection";
+
+import teroristsData from "../../terorists/terorists";
+
 function App() {
-  const [data, setData] = useState({});
+  const [terrorists, setTerrorists] = useState([...teroristsData]);
+  const [filterName, setFilterName] = useState("");
+
+  function filter(filterName) {
+    setFilterName(filterName)
+    setTerrorists(teroristsData.filter((t) => t.name.includes(filterName)));
+  }
 
   return (
     <>
       <NavBar />
       <div className="filterSectionDiv">
-        <FilterSection />
+        <FilterSection
+          filterName={filterName}
+          filter={(value) => filter(value)}
+        />
       </div>
 
       <div className="dataTeroristsDiv">
-        <TerirstsData />
+        <TerirstsData terrorists={terrorists} />
       </div>
     </>
   );
