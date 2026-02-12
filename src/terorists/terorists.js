@@ -1,4 +1,4 @@
-[  
+const teroristsData = [  
   {  
     "name": "Walid Shami",  
     "organization": "Black Cedar Brigade",  
@@ -313,3 +313,4 @@
   }  
 ]
 
+export default teroristsData;
