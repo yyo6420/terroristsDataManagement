@@ -1,0 +1,12 @@
+.navBar {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    direction: rtl;
+    background-color: cadetblue;
+}
+
+.NavBarTitle {
+    font-size: 3.5rem;
+    color:cornsilk ;
+}
